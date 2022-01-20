@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>NASA's Astronomy Picture of the Day: Shopify Edition</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Nasa's Astronomical Picture of the Day</h1>
+      <label for="datepicker">Choose a different date: </label>
+      <input id="datepicker" type="date" min="" max="">
+    </header>
+
+    <section class="title-section">
+      <div class="heading">
+        <h2 id="title"></h2>
+        <button type="button"><i onclick="like(this)" class="fa fa-heart fa-heart-o"></i></button>
+      </div>
+      <p id="date"></p>
+      <form>
+      </form>
+    </section>
+
+    <div class="media-container">
+      <section id="media-section">
+      </section>
+      <p id="description"></p>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+    <script>
+      function like(x) {
+        x.classList.toggle("fa-heart-o");
+      }
+    </script>
+</body>
+
+</html>
